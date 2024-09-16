@@ -1,0 +1,135 @@
+<!DOCTYPE html> 
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宝盖三眼天珠</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.8;
+            margin: 20px;
+            color: #333;
+        }
+        h1 {
+            font-size: 24px;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+        img {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 100%;
+            height: auto;
+        }
+        p {
+            text-indent: 2em; /* 两个空格缩进 */
+            margin-bottom: 20px;
+        }
+        .image-row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .image-row img {
+            width: 40%;
+            margin: 0 10px;
+        }
+        .image-center {
+            display: block;
+            margin: 0 auto 20px;
+            width: 45%;
+        }
+        .image-long {
+            width: 45%;
+            margin: 0 auto;
+            height: 150%;
+        }
+        .views-counter {
+            font-size: 14px;
+            color: #666;
+            text-align: left; /* 阅读量居左显示 */
+            margin-bottom: 10px;
+        }
+        .specifications {
+            text-indent: 0;
+            font-weight: bold;
+            margin-top: 20px;
+            position: sticky; /* 定格显示 */
+            top: 0;
+            background-color: white;
+            padding-top: 10px;
+        }
+        .spec-description {
+            text-indent: 1em;
+        }
+        .spec-item {
+            text-indent: 1em; /* 缩进一格 */
+            margin-bottom: 10px;
+        }
+        ::selection {
+            background-color: #ffd1dc;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>宝盖三眼天珠</h1> 
+    
+    <div class="views-counter">
+        <span id="view-count">0</span> 人已阅读
+    </div>
+
+    <hr>
+
+    <p>  天珠缘造了古老的文明，是避天族对天神崇拜的圣物，恰是作为殊胜的供佛圣物世代相传。天珠承载自己的神性，生生不息，天珠记载了生命的轮回，证得了大成就者的加德。天珠作为供佛圣物与护身的法器，穿越千人类历史时空。</p>
+
+    <div class="image-row">
+        <img src="https://i.postimg.cc/rwKhjN9G/pic1.png" alt="三眼天珠图片1">
+        <img src="https://i.postimg.cc/nVGwhzzm/pic2.png" alt="三眼天珠图片2">
+    </div>
+
+    <p>  而三眼天珠作为藏密七宝之一，具有深厚的文化意义和宗教价值。其价格之所以高昂，部分原因在于其稀缺性和独特的文化背景。三眼天珠不仅在佛教文化中占有重要地位，还被认为具有辟邪、护身的功能，象征着名誉的坚实和希望。</p>
+
+    <img src="https://i.postimg.cc/JnbYJ759/pic3.png" alt="三眼天珠图片3" class="image-long">
+    
+    <img src="https://i.postimg.cc/4dCFmHV6/pic4.png" alt="三眼天珠图片4" class="image-long">
+
+    <p class="specifications">此宝盖三眼天珠规格：</p>
+
+    <!-- 用文本代替表格 -->
+    <p class="spec-item">对孔长：44.6mm</p>
+    <p class="spec-item">珠体最大直径：19mm</p>
+    <p class="spec-item">孔口直径：2.9mm和2.8mm</p>
+
+    <p class="spec-description">珠体风化纹密布，包浆润厚，年代感极强，略有因表层晶体疏松而形成的沁线。珠体表面大部分被蚀染呈黑色，色泽深沉凝厚，其间有牙黄色相间的纹饰。</p>
+
+    <div class="image-row">
+        <img src="https://i.postimg.cc/qMmb252M/pic5.png" alt="三眼天珠图片5">
+        <img src="https://i.postimg.cc/DyfpJTJM/pic6.png" alt="三眼天珠图片6">
+    </div>
+
+    <p>  天珠的矿岩成份中含玛瑙及玉质，属半宝石，且纯正的老天珠的存世量十分稀少，因此物稀为贵。在藏人眼里，天珠相当于钻石，多半是串成项链，戴在妇女身上当饰物，出席盛会的时候拿来炫耀地位，并不是宗教法器。在配戴的设计上除了实用之外，美观大方也是设计的重点。</p>
+
+    <p>  因为老天珠的数量非常罕有，不像其它的珠宝可以开矿挖掘，也因为天珠不可思议的磁场感应及灵性，加上历代持有者的修持、配戴，促使其价值的提升，物稀为贵，故成了有心人争相收集典藏之珍宝。</p>
+
+    <hr>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let viewCountElement = document.getElementById('view-count');
+            let currentViews = localStorage.getItem('views') || 0;
+            currentViews = parseInt(currentViews) + 1;
+            viewCountElement.textContent = currentViews;
+            localStorage.setItem('views', currentViews);
+        });
+    </script>
+
+</body>
+</html>
